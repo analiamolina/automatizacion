@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: io.opentelemetry:opentelemetry-sdk-metrics:1.48.0" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="io.opentelemetry" artifactId="opentelemetry-sdk-metrics" version="1.48.0" baseVersion="1.48.0" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.opentelemetry/opentelemetry-sdk-metrics/1.48.0/b65ddd2c3f7cd4a86a82df954aa9b977e1d3f5fe/opentelemetry-sdk-metrics-1.48.0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.opentelemetry/opentelemetry-sdk-metrics/1.48.0/4d36d5b649b8fecd46f10b978c0d4b084d5673b8/opentelemetry-sdk-metrics-1.48.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.opentelemetry/opentelemetry-sdk-metrics/1.48.0/c9436aa96bae40ad28da2e4102cde78bcd5632e8/opentelemetry-sdk-metrics-1.48.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: org.seleniumhq.selenium:selenium-api:4.30.0" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="org.seleniumhq.selenium" artifactId="selenium-api" version="4.30.0" baseVersion="4.30.0" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-api/4.30.0/5010f4aaa0ae2b22553703272c5d46a9e81a65d1/selenium-api-4.30.0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-api/4.30.0/930d712556c80089b0b6d8960c565d394e6089a/selenium-api-4.30.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.seleniumhq.selenium/selenium-api/4.30.0/cf976eed5e2a74c45a1a1f2db590d73262fa1b77/selenium-api-4.30.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

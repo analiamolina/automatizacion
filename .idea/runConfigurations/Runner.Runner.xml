@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectRunConfigurationManager">
+    <configuration default="false" name="Runner.Runner" type="JUnit" factoryName="JUnit">
+      <module name="simpleTestAutomation" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="Runner.Runner" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+      <option name="VM_PARAMETERS" value="" />
+      <envs />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <ADD_TESTS_TO_RUNNER>false</ADD_TESTS_TO_RUNNER>
+    </configuration>
+  </component>
+</project>

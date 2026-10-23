@@ -1,30 +1,26 @@
 package Control;
 
 import Constant.Navegador;
-//import io.github.bonigarcia.wdm.WebDriverManager;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.remote.DesiredCapabilities;
-
-import java.util.Map;
 
 public class DriverManager {
     private WebDriver driver;
 
-    private final DesiredCapabilities ConfiguracionesNav = new DesiredCapabilities();
-
-    protected void resolverDriver(Navegador nav, String url){
+    protected void resolverDriver(Navegador nav, String url) {
         String os = System.getProperty("os.name").toLowerCase();
         String osVersion = System.getProperty("os.version").toLowerCase();
-        System.out.println("\nSistema Operativo :" + os+", "+osVersion);
+        System.out.println("\nSistema Operativo :" + os + ", " + osVersion);
         System.out.println("\nNavegador :" + nav);
-        switch (nav){
+        switch (nav) {
             case Chrome:
                 System.out.println("Chrome seleccionado");
+
                 ChromeOptions configuracionChrome = new ChromeOptions();
-                if(os.contains("linux")){
-                    System.out.println(System.getProperty("user.name"));
+
+                if (os.contains("linux")) {
                     configuracionChrome.addArguments("--disable-dev-shm-usage");
                     configuracionChrome.addArguments("--no-sandbox");
                     configuracionChrome.addArguments("--disable-gpu");
@@ -32,24 +28,27 @@ public class DriverManager {
                     configuracionChrome.addArguments("--ignore-ssl-errors=yes");
                     configuracionChrome.addArguments("--windows-size=1920x1080");
                 }
-               // WebDriverManager.chromedriver().browserVersion("147").setup();
+
+                WebDriverManager.chromedriver().setup();
+
                 configuracionChrome.addArguments("--remote-allow-origins=yes");
-                System.setProperty("webdriver.manager.verbose","true");
+
+                System.setProperty("webdriver.manager.verbose", "true");
+
                 this.driver = new ChromeDriver(configuracionChrome);
+
                 this.driver.manage().deleteAllCookies();
-                break;
-            default:
-                System.out.println("No es posible levantar el navegador "+nav);
+
                 break;
         }
         driver.manage().window().maximize();
         driver.get(url);
     }
 
-    protected WebDriver getDriver(){
-        if(driver == null){
+    protected WebDriver getDriver() {
+        if (driver == null) {
             return null;
-        }else{
+        } else {
             return driver;
         }
     }
