@@ -8,6 +8,7 @@ import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
 
 public class Hooks {
     private Scenario scenario;
@@ -30,7 +31,11 @@ public class Hooks {
     }
 
     public void generarEvidencia(String imageRefName){
-        byte[] screenShot = ((TakesScreenshot) DriverContext.getDriver()).getScreenshotAs(OutputType.BYTES);
+        WebDriver driver = DriverContext.getDriver();
+        if (driver == null) {
+            return;
+        }
+        byte[] screenShot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
         this.scenario.attach(screenShot,"image/png", imageRefName);
     }
 

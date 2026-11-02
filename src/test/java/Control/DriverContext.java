@@ -26,8 +26,12 @@ public class DriverContext {
     }
 
     public static void quitDriver(){
-        if(driverManager!=null){
-            driverManager.getDriver().quit();
+        if (driverManager != null) {
+            WebDriver driver = driverManager.getDriver();
+            if (driver != null) {
+                driver.quit();
+            }
+            driverManager = new DriverManager();
         }
     }
 }
