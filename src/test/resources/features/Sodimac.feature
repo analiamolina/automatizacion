@@ -21,3 +21,4 @@ Feature: Validación visual y funcional del catálogo Navidad
     And los precios deben tener formato monetario CLP
     And ningún elemento debe superponerse
     And no deben existir tarjetas visualmente duplicadas
+    And prueba2
